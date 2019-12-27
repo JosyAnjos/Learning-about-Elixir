@@ -9,7 +9,7 @@ defmodule Cards do
 
   def create_deck do
     ["Ace", "Two", "Three"]
-    values = ["Ace", "Two", "Three", "Four"]
+    values = ["Ace", "Two", "Three", "Four", "Five"]
     suits = ["Spades", "Clubs", "Hearts", "Diamants"]
 
     for suit <- suits, value <- values do
@@ -28,7 +28,7 @@ defmodule Cards do
       iex> deck = Cards.create_deck
       iex> Cards.contains?(deck, "Ace of Spades")
       true
-      
+
   """
 
   def contains?(deck, card) do
